@@ -1,0 +1,19 @@
+{
+  "name": "newsscrape",
+  "version": "1.0.0",
+  "description": "mongoDB mongoose news scraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clo2go/newsScraper.git"
+  },
+  "author": "Carlos Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clo2go/newsScraper/issues"
+  },
+  "homepage": "https://github.com/clo2go/newsScraper#readme"
+}
