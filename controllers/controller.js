@@ -32,8 +32,6 @@ router.get('/scrape', function(req, res) {
 
                 result.title = $(this).children('a').attr('title');
                 result.link = baseUrl + $(this).children('a').attr('href');
-                // result.title = $(this).children("a").attr("title");
-                // result.link = $(this).children("a").attr("href");
 
         resultsArray.push(result);
 
