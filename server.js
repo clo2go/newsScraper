@@ -34,7 +34,7 @@ db.once('open', function() {
   console.log('Mongoose connection successful.');
 });
 
-var PORT = process.env.PORT || 5000;
+var PORT = process.env.PORT || 3000;
 app.listen(PORT, function() {
   console.log('App running on port: ' + PORT);
 });
