@@ -23,18 +23,25 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/controller.js');
 app.use('/', routes);
 
-mongoose.connect("mongodb://heroku_pfkzfmn9:uc6mpcpsbd8ad1vmqorj4g35eb@ds127948.mlab.com:27948/heroku_pfkzfmn9");
-var db = mongoose.connection;
+mongoose.connect("mongodb://localhost/week18scrape");
+const db = mongoose.connection
+	.on("error", (error) => console.warn("Warning:", error))
+	.once("open", () => console.log("Mongoose is walking (they don't run)"));
 
-db.on('error', function(err) {
-  console.log('Mongoose Error: ', err);
-});
 
-db.once('open', function() {
-  console.log('Mongoose connection successful.');
-});
 
-var PORT = process.env.PORT || 3000;
+// mongoose.connect("mongodb://heroku_pfkzfmn9:uc6mpcpsbd8ad1vmqorj4g35eb@ds127948.mlab.com:27948/heroku_pfkzfmn9");
+// var db = mongoose.connection;
+
+// db.on('error', function(err) {
+//   console.log('Mongoose Error: ', err);
+// });
+
+// db.once('open', function() {
+//   console.log('Mongoose connection successful.');
+// });
+
+var PORT = process.env.PORT || 3000 ;
 app.listen(PORT, function() {
   console.log('App running on port: ' + PORT);
 });
