@@ -23,10 +23,10 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/controller.js');
 app.use('/', routes);
 
-mongoose.connect("mongodb://localhost/week18scrape");
-const db = mongoose.connection
-	.on("error", (error) => console.warn("Warning:", error))
-	.once("open", () => console.log("Mongoose is walking (they don't run)"));
+// mongoose.connect("mongodb://localhost/week18scrape");
+// const db = mongoose.connection
+// 	.on("error", (error) => console.warn("Warning:", error))
+// 	.once("open", () => console.log("Mongoose is walking (they don't run)"));
 
 
 

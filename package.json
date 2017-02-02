@@ -2,7 +2,7 @@
   "name": "newsscrape",
   "version": "1.0.0",
   "description": "mongoDB mongoose news scraper",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -18,17 +18,16 @@
   },
   "homepage": "https://github.com/clo2go/newsScraper#readme",
   "dependencies": {
-    "bluebird": "^3.4.6",
-    "body-parser": "^1.15.2",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.16.0",
     "cheerio": "^0.22.0",
-    "express": "^4.14.0",
+    "express": "^4.14.1",
     "express-handlebars": "^3.0.0",
-    "install": "^0.8.2",
-    "mongodb": "^2.2.15",
+    "mongodb": "^2.2.22",
+    "mongoose": "^4.8.1",
     "morgan": "^1.7.0",
-    "mongoose": "^4.7.2",
-    "npm": "^4.0.3",
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "url-parse": "^1.1.7"
   },
   "devDependencies": {}
 }
